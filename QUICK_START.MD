@@ -14,8 +14,14 @@ cmd或者shell进入到python根目录\Scripts，执行以下命令
 
 ```shell
 pip install poetry
-```
+``` 
+安装完成后使用以下命令检测是否安装成功
+```shell
+pip show poetry
+```  
+出现以下类似代码即为安装poetry成功，可进行下一步 
 
+![show_poetry.png](doc%2Fquick_start%2Fshow_poetry.png)
 ## 4.配置虚拟环境
 
 为啥配置虚拟环境？因为不同的项目可能需要不同的依赖，为了避免依赖冲突，所以需要配置虚拟环境
@@ -35,7 +41,11 @@ python = "^3.9"
 ```shell
 poetry update
 ```
-
+第一次执行可能会报错，安装对应的[软件包](https://visualstudio.microsoft.com/visual-cpp-build-tools/
+)后重新执行上面的update指令即可
+```shell
+ error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools"
+```
 如果不需要更换python版本，直接执行以下命令
 
 ```shell
